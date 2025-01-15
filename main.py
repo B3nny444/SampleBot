@@ -1,4 +1,4 @@
-from pyrogram import Clients, filters
+from pyrogram import Client, filters
 
 API_ID = "27094161"
 API_HASH = "39477b23f5e6abea95fe0f92b7f00de0"
