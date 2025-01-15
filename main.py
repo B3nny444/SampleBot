@@ -10,6 +10,10 @@ bunny = Client(
   api_hash = API_HASH,
   bot_token = BOT_TOKEN
 )
+@bunny.on_message(filters.command("start"))
+async def start_cmd(Client, message):
+  print("START Command")
+
 
 print("bot was started")
 bunny.run()
