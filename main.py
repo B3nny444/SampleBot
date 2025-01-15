@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 
 API_ID = "27094161"
 API_HASH = "39477b23f5e6abea95fe0f92b7f00de0"
-BOT_TOKEN ="7008178074:AAFQNeFSqBmMQgMaeeDmOdWXmeMX8Z1CMtA"
+BOT_TOKEN = "7425029151:AAHkMU98HkWgamjUFcGBKZWdEx3_O9lN7Jo"
 
 bunny = Client(
   name="bunny",
