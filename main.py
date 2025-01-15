@@ -12,7 +12,11 @@ bunny = Client(
 )
 @bunny.on_message(filters.command("start"))
 async def start_cmd(Client, message):
-  print("START Command")
+  await message.reply_text("hi itz bunny time")
+@bunny.on_message(filters.command("help"))
+async def help_cmd(Client, message):
+  await message.reply_text("feel free to ask call me")
+                  
 
 
 print("bot was started")
