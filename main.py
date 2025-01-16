@@ -10,12 +10,18 @@ bunny = Client(
   api_hash = API_HASH,
   bot_token = BOT_TOKEN
 )
+
+START_BUTTONS =[[
+  inlineKeyboardButton("join my channel", url = "https://t.me/Kaiju_no8_in_tamil_dub")
+]]
 @bunny.on_message(filters.command("start"))
 async def start_cmd(Client, message):
   await message.reply_photo(
     photo = "",
-    "hi im summoned by Bunny")
-  
+    text = "you have to join the channel to start me"
+    reply_markup = inlineKeyboardMarkUp("START_BUTTONS")
+    description = "hi im summoned by Bunny")
+  )
   
 
                   
